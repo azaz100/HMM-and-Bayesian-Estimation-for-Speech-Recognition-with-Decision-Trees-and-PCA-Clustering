@@ -59,8 +59,10 @@ Three classifiers were trained and compared:
 
 To run this pipeline, install the necessary dependencies:
 
-```bash
+```
+bash
 pip install numpy pandas librosa matplotlib seaborn scikit-learn scipy joblib
+```
 
 ## 🚀 Usage
 
@@ -73,6 +75,7 @@ pip install numpy pandas librosa matplotlib seaborn scikit-learn scipy joblib
   Open Dysarthric_Speech_Recognition_Pipeline.ipynb in Jupyter Notebook or Google Colab.
 4. **Execute Cells:**
   Run the cells sequentially to perform extraction, visualization, testing, and training.
+
 
 ## 📈 Visualizations
 

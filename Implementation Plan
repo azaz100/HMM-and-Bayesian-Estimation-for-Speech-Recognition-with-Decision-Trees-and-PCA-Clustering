@@ -1,0 +1,46 @@
+Dysarthric Speech Recognition Pipeline Implementation Plan
+
+Goal Description
+Implement a comparative study of models (HMM, Bayesian GMM, Random Forest) for Dysarthric Speech Recognition using TORGO and RAWDysPeech datasets. The pipeline includes data loading, feature extraction (MFCCs, Pitch, Formants), PCA dimensionality reduction, model training, evaluation, and hypothesis testing.
+
+User Review Required
+Dataset Paths: Confirming the paths for TORGO and RAWDysPeech.
+Libraries: Ensure librosa, sklearn, hmmlearn, scipy, matplotlib, seaborn are installed.
+
+Proposed Changes
+New Notebook: Dysarthric_Speech_Recognition_Pipeline.ipynb
+I will create a new Jupyter Notebook with the following sections:
+
+1. Setup and Imports
+Import necessary libraries.
+
+2. TORGO Dataset Pipeline
+Data Loading: Load F_Con, F_Dys, M_Con, M_Dys from TORGO dataset. Use 25% subset.
+Feature Extraction: Extract MFCCs, Pitch, Formants.
+PCA: Apply PCA.
+Model Training: Train Random Forest, HMM, GMM.
+Evaluation: Confusion matrices, ROC curves, Accuracy.
+Hypothesis Testing: T-test or ANOVA.
+
+3. RAWDysPeech Dataset Pipeline
+Data Loading: Load from folders 0 and 1 in RAWDysPeech dataset. Use 25% subset.
+Feature Extraction: Same as above.
+PCA: Same as above.
+Model Training: Same as above.
+Evaluation: Same as above.
+Hypothesis Testing: Same as above.
+
+4. Comparison
+Compare results between the two datasets.
+Generate comparative plots.
+
+Verification Plan
+
+Automated Tests
+Run the notebook cells sequentially.
+Check for successful execution of each step.
+Verify output plots and metrics are generated.
+
+Manual Verification
+Inspect the generated plots for reasonableness.
+Check if accuracy scores are within expected ranges (better than random).

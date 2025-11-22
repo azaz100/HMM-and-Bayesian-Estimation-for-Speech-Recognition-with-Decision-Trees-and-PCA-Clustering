@@ -1,0 +1,2 @@
+# HMM-and-Bayesian-Estimation-for-Speech-Recognition-with-Decision-Trees-and-PCA-Clustering
+Developed a dysarthric speech classifier using TORGO and RAWDysPeech datasets. Built a feature pipeline (MFCC/F0/PCA) to compare HMM, Bayesian GMM, and Random Forest models. The Random Forest achieved ~88% accuracy, significantly outperforming generative models by capturing non-linear acoustic patterns in pathological speech.
